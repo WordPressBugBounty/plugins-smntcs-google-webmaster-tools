@@ -6,13 +6,13 @@
  * Author:                Niels Lange
  * Author URI:            https://nielslange.de
  * Text Domain:           smntcs-google-webmaster-tools
- * Version:               3.2
+ * Version:               3.3
  * Requires PHP:          5.6
  * Requires at least:     3.4
  * License:               GPL v2 or later
  * License URI:           https://www.gnu.org/licenses/gpl-2.0.html
  *
- * @package SMNTCS Google Webmaster Tools
+ * @package SMNTCS_Google_Webmaster_Tools
  */
 
 defined( 'ABSPATH' ) || exit;
@@ -25,7 +25,7 @@ defined( 'ABSPATH' ) || exit;
 function smntcs_google_webmaster_tools_load_textdomain() {
 	load_plugin_textdomain( 'smntcs-google-webmaster-tools', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 }
-add_action( 'plugins_loaded', 'smntcs_google_webmaster_tools_load_textdomain' );
+add_action( 'plugins_loaded', 'smntcs_google_webmaster_tools_load_textdomain', 1, 0 );
 
 /**
  * Add settings link on plugin page
@@ -88,4 +88,4 @@ function smntcs_google_webmaster_tools_enqueue() {
 		print( get_option( 'smntcs_google_webmaster_tools_tracking_code' ) . "\n" ); //phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 	}
 }
-add_action( 'wp_head', 'smntcs_google_webmaster_tools_enqueue' );
+add_action( 'wp_head', 'smntcs_google_webmaster_tools_enqueue', 1, 0 );
