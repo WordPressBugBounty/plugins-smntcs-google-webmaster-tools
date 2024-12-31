@@ -2,8 +2,8 @@
 
 Contributors:       nielslange
 Tags:               Google Webmaster Tools, Google Search Console
-Stable tag:         3.3
-Tested up to:       6.6
+Stable tag:         3.4
+Tested up to:       6.7
 Requires PHP:       5.6
 Requires at least:	3.4
 License:            GPL v2 or later
@@ -13,11 +13,7 @@ Adds the verification code of Google Search Console, former Google Webmaster Too
 
 == Description ==
 
-Google Search Console, former Google Webmaster Tools, does a great job when it comes to check the indexing status of your site.
-
-= SMNTCS Google Webmaster Tools =
-
-SMNTCS Google Webmaster Tools enables you to add Google Search Console to your website.
+Google Search Console, formerly known as Google Webmaster Tools, is an essential tool for monitoring and maintaining your site's presence in Google search results. The SMNTCS Google Webmaster Tools plugin simplifies the process of adding the Google Search Console verification code to your website, ensuring that you can easily verify your site and access valuable insights about its performance.
 
 == Installation ==
 
@@ -54,6 +50,10 @@ This issue might be caused by a security plugin. If you use a security plugin, e
 3. Paste you Google Analytics tracking code in the customizer
 
 == Changelog ==
+
+= 3.4 (2024.10.30) =
+
+-   Test up to WordPress 6.7
 
 = 3.3 (2024.10.22) =
 
